@@ -1,0 +1,20 @@
+{
+    "runOnStartup": true,
+    "terminals": [
+        {
+            "splitTerminals": [
+                {
+                    "commands": ["npm start"],
+                    "name": "APP"
+                }
+            ]
+        },
+        {
+            "splitTerminals": [
+                {
+                    "name": "GIT"
+                }
+            ]
+        }
+    ]
+}

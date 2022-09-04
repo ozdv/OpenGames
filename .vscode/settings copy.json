@@ -1,0 +1,6 @@
+{	
+    "prettier.eslintIntegration": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "editor.bracketPairColorization.enabled": true
+}
