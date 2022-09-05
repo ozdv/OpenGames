@@ -1,6 +1,16 @@
 import React from "react";
-const App = () => {
-    return <div> This was made from scratch</div>;
-};
+import Navbar from "../shared/Navbar";
+import AppRouter from "./AppRouter";
 
-export default App;
+require("./styles.scss");
+
+export default function App() {
+    return (
+        <div className="App">
+            <Navbar name="Open Games" link="/" />
+            <div className="content">
+                <AppRouter />
+            </div>
+        </div>
+    );
+}

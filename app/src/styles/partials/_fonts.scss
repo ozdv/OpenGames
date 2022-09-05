@@ -1,0 +1,59 @@
+@import "./colors";
+$body-font: "Roboto";
+$header-font: "Roboto";
+
+%bold28 {
+    font-family: $header-font;
+    font-weight: 500;
+    font-size: 28px;
+    color: $navy;
+}
+
+%bold24 {
+    font-family: $header-font;
+    font-weight: 500;
+    font-size: 24px;
+    color: $navy;
+}
+
+%bold20 {
+    font-family: $header-font;
+    font-weight: 500;
+    font-size: 20px;
+    color: $navy;
+}
+
+%bold18 {
+    font-family: $header-font;
+    font-weight: 500;
+    font-size: 18px;
+    color: $navy;
+}
+
+%bold14 {
+    font-family: $header-font;
+    font-weight: 500;
+    font-size: 18px;
+    color: $navy;
+}
+
+%regular20 {
+    font-family: $header-font;
+    font-weight: normal;
+    font-size: 20px;
+    color: $navy;
+}
+
+%regular14 {
+    font-family: $header-font;
+    font-weight: normal;
+    font-size: 14px;
+    color: $navy;
+}
+
+%regular12 {
+    font-family: $header-font;
+    font-weight: normal;
+    font-size: 12px;
+    color: $navy;
+}

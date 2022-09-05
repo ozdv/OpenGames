@@ -1,0 +1,11 @@
+@import "../styles/partials/index";
+
+html,
+body {
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+    font-family: "Roboto";
+}

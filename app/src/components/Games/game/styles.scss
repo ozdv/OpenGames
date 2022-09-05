@@ -1,0 +1,25 @@
+@import "../../../styles/partials/index";
+
+.Game {
+    background-color: #333333;
+    min-width: 70vh;
+    min-height: 70vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .Game_header {
+        background-color: #343434;
+        height: 4vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+    }
+    .Game_current {
+        display: flex;
+        height: 70vh;
+    }
+}
