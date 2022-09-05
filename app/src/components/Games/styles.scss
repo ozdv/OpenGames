@@ -1,1 +1,11 @@
 @import "../../styles/partials/index";
+
+.Games {
+    .Game_types {
+        display: flex;
+        margin: 20px;
+        .Button {
+            margin: 10px;
+        }
+    }
+}

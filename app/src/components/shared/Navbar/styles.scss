@@ -4,10 +4,11 @@
     width: 100%;
     padding: 1em;
     margin-bottom: 1em;
-    background-color: $ocean;
+    background-color: $blue;
 
     .Navbar_name {
         text-align: center;
         @extend %bold28;
+        padding-right: 20px;
     }
 }

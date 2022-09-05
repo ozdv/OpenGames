@@ -10,10 +10,10 @@ export default function Navbar(props) {
         <div className="Navbar">
             <header>
                 <a className="Navbar_name" href="/">
-                    {name}
+                    Home
                 </a>
                 <a className="Navbar_name" href="/games">
-                    games
+                    Games
                 </a>
             </header>
         </div>

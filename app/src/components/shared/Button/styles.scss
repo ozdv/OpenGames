@@ -1,0 +1,33 @@
+@import "../../../styles/partials/index";
+
+.Button {
+    @extend %regular14;
+    transition: 0.15s ease-in;
+    height: 25px;
+    padding: 4px 9px;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: max-content;
+
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+
+    box-shadow: inset 0 0 0 1px $navy;
+
+    &:hover,
+    &:focus {
+        box-shadow: inset 0 0 0 2px $navy;
+    }
+
+    &:active,
+    &.Button--loading {
+        transition: none;
+        box-shadow: inset 0 0 12px var(--box-shadow-active),
+            inset 0 0 0 3px var(--box-shadow-color);
+    }
+}

@@ -1,17 +1,22 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Sudoku from "../sudoku";
+import Card from "../../shared/Card";
 
 require("./styles.scss");
 
-export default function Game() {
+export default function Game(props) {
+    const { game } = props;
     return (
         <div className="Game">
-            <div className="Game_header">header</div>
-            <div className="Game_current">
-                <Sudoku />
-            </div>
+            <Card>
+                {game === "sudoku" && <Sudoku />}
+                {game === "solitaire" && <Sudoku />}
+            </Card>
         </div>
     );
 }
 
-Game.propTypes = {};
+Game.propTypes = {
+    game: PropTypes.string,
+};
