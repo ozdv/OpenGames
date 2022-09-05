@@ -7,7 +7,6 @@ require("./styles.scss");
 export default function App() {
     return (
         <div className="App">
-            <Navbar name="Open Games" link="/" />
             <div className="content">
                 <AppRouter />
             </div>

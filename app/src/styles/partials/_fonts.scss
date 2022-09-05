@@ -5,6 +5,8 @@ $header-font: "Roboto";
 %bold28 {
     font-family: $header-font;
     font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
     font-size: 28px;
     color: $navy;
 }
