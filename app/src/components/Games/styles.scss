@@ -1,11 +1,19 @@
 @import "../../styles/partials/index";
 
 .Games {
-    .Game_types {
+    height: 100%;
+    padding: 20px;
+    .Games__options {
+        @extend %regular18;
         display: flex;
-        margin: 20px;
-        .Button {
-            margin: 10px;
+        justify-content: center;
+        margin: 0 0 10px 0;
+    }
+    .Game__types {
+        display: flex;
+        justify-content: center;
+        :last-child {
+            margin-left: 10px;
         }
     }
 }

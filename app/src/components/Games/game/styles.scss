@@ -1,19 +1,6 @@
 @import "../../../styles/partials/index";
 
 .Game {
-    margin: 20px 100px;
-    // background-color: #333333;
-    // min-width: 70vh;
-    // min-height: 70vh;
-    // border-radius: 10px;
-    // display: flex;
-    // flex-direction: column;
-
-    // .Game_current {
-    //     display: flex;
-    //     height: 70vh;
-    // }
-    .Card {
-        background-color: $ocean;
-    }
+    height: 100%;
+    padding: 20px;
 }

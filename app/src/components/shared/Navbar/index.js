@@ -8,14 +8,14 @@ export default function Navbar(props) {
 
     return (
         <div className="Navbar">
-            <header>
+            <div className="headerContent">
                 <a className="Navbar_name" href="/">
                     Home
                 </a>
                 <a className="Navbar_name" href="/games">
                     Games
                 </a>
-            </header>
+            </div>
         </div>
     );
 }

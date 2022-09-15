@@ -1,7 +1,17 @@
+@import "../../../../styles/partials/index.scss";
 .Grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 70vh;
+    box-shadow: 0 0 4px rgba($neutral-40, 1);
+
+    .Row:nth-child(2),
+    .Row:nth-child(3),
+    .Row:nth-child(5),
+    .Row:nth-child(6),
+    .Row:nth-child(8),
+    .Row:nth-child(9) {
+        border-top: 1px solid $neutral-90;
+    }
+    .Row:nth-child(3),
+    .Row:nth-child(6) {
+        border-bottom: 2px solid $neutral-90;
+    }
 }

@@ -1,7 +1,31 @@
 @import "../../../styles/partials/index";
 
 .Sudoku {
-    width: 100%;
-    height: 100%;
-    border-radius: 0 0 10px 10px;
+    .backButton {
+        position: absolute;
+    }
+    .Sudoku__difficultyLabel {
+        @extend %regular18;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .Sudoku__options {
+        display: flex;
+        justify-content: center;
+        .Button {
+            margin-right: 10px;
+        }
+    }
+    .Sudoku__board {
+        display: flex;
+        justify-content: center;
+        // width: fit-content;
+    }
+    .Sudoku__label {
+        @extend %regular18;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
 }
