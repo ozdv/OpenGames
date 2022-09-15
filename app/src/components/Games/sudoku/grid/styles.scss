@@ -1,6 +1,7 @@
 @import "../../../../styles/partials/index.scss";
 .Grid {
     box-shadow: 0 0 4px rgba($neutral-40, 1);
+    border-radius: 6px;
 
     .Row:nth-child(2),
     .Row:nth-child(3),
