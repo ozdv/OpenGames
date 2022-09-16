@@ -3,10 +3,11 @@ import React, { useState } from "react";
 require("./styles.scss");
 
 export default function Cell(props) {
-    const { value, rowIndex, cellIndex } = props;
+    const { value, setStartTimer } = props;
     const [cellValue, setCellValue] = useState(value);
 
     const cellValueHandler = (event) => {
+        setStartTimer(true);
         if (event.nativeEvent.data === null) {
             setCellValue("");
         } else if (event.nativeEvent.data === 0) {
@@ -22,7 +23,6 @@ export default function Cell(props) {
     return (
         <div className="Cell">
             <input
-                id={`row${rowIndex}-cell${cellIndex}`}
                 className="cellInput"
                 type="text"
                 value={cellValue === 0 ? "" : cellValue}

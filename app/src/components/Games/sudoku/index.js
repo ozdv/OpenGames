@@ -9,6 +9,8 @@ export default function Sudoku() {
     const navigate = useNavigate();
     const [difficulty, setDifficulty] = useState("Easy");
     const [page, setPage] = useState(2);
+    const [startTimer, setStartTimer] = useState(false);
+    const [timer, setTimer] = useState("00:00");
 
     return (
         <div className="Sudoku">
@@ -56,9 +58,14 @@ export default function Sudoku() {
                     <Button className="backButton" onClick={() => setPage(1)}>
                         Back
                     </Button>
-                    <div className="Sudoku__label">Sudoku: {difficulty}</div>
+                    <div className="Sudoku__header">
+                        <div className="Sudoku__label">
+                            Sudoku: {difficulty}
+                        </div>
+                        <div className="Sudoku__timer">{timer}</div>
+                    </div>
                     <div className="Sudoku__board">
-                        <Grid />
+                        <Grid setStartTimer={setStartTimer} />
                     </div>
                 </div>
             )}

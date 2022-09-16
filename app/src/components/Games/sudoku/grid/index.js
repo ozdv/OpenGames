@@ -3,7 +3,8 @@ import Row from "./row";
 
 require("./styles.scss");
 
-export default function Grid() {
+export default function Grid(props) {
+    const { setStartTimer } = props;
     const puzzle = [
         ["", "", "", "", "", "", "", "", ""],
         ["", "", "", "", "", "", "", "", ""],
@@ -19,7 +20,12 @@ export default function Grid() {
     return (
         <div className="Grid">
             {puzzle.map((rowOfValues, i) => (
-                <Row key={`row-${i}`} values={rowOfValues} rowIndex={i} />
+                <Row
+                    setStartTimer={setStartTimer}
+                    key={`row-${i}`}
+                    values={rowOfValues}
+                    rowIndex={i}
+                />
             ))}
         </div>
     );
