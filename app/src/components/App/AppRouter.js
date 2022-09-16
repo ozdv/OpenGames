@@ -10,7 +10,7 @@ export default function AppRouter() {
         <BrowserRouter>
             <Routes>
                 <Route exact path="/" element={<Home />} />
-                <Route path="games" element={<Games />} />
+                <Route exact path="games" element={<Games />} />
                 <Route path="sudoku" element={<Game game="sudoku" />} />
                 <Route path="*" element={<Games />} />
             </Routes>
