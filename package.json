@@ -1,11 +1,14 @@
 {
     "name": "opengames",
+    "homepage": "http://ozdv.github.io/",
     "version": "1.0.0",
     "description": "desc",
     "main": "./app/src/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "webpack-dev-server .",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "build": "Webpack ."
     },
     "author": "",
