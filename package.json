@@ -1,6 +1,6 @@
 {
     "name": "opengames",
-    "homepage": "http://ozdv.github.io/",
+    "homepage": "http://ozdv.github.io/OpenGames",
     "version": "1.0.0",
     "description": "desc",
     "main": "./app/src/index.js",
@@ -33,6 +33,7 @@
     },
     "dependencies": {
         "classnames": "^2.3.1",
+        "eslint": "^8.23.1",
         "prop-types": "^15.8.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
