@@ -1,6 +1,6 @@
 {
     "name": "opengames",
-    "homepage": "http://ozdv.github.io/",
+    "homepage": "http://ozdv.github.io/OpenGames",
     "version": "1.0.0",
     "description": "desc",
     "main": "./app/src/index.js",
