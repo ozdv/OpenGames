@@ -5,13 +5,14 @@ import Games from "../Games";
 import Game from "../games/game";
 
 export default function AppRouter() {
+    // console.log(process.env.PUBLIC_URL);
     return (
         <BrowserRouter>
             <Routes>
                 <Route exact path="/" element={<Home />} />
-                <Route exact path="games" element={<Games />} />
-                <Route exact path="sudoku" element={<Game game="sudoku" />} />
-                <Route exact path="*" element={<Games />} />
+                <Route path="games" element={<Games />} />
+                <Route path="sudoku" element={<Game game="sudoku" />} />
+                <Route path="*" element={<Games />} />
             </Routes>
         </BrowserRouter>
     );
